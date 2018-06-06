@@ -8,7 +8,7 @@ import watershedProcess as wp
 import superpixelProcess as spp
 
 img = cv2.imread('images/bag1.png')
-print img.shape
+#print img.shape
 cv2.imshow('Frame',img)
 cv2.waitKey(0)
 cv2.imshow('Frame', wp.watershedProcess(img))
