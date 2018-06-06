@@ -9,10 +9,6 @@ cap = cv2.VideoCapture('AVSS_AB_Easy_Divx.avi')
 
 while(1):
     ret, frame = cap.read()
-    if ret:
-        print "read"
-    else:
-        print "fail"
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     
     #scalefactor is step for resizing reference (tradeoff accuracy(smaller) for speed (larger)
